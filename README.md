@@ -102,6 +102,12 @@ If the shift ID does not exist, it returns:
   "err": "no shift"
 }
 ```
+curl -X POST http://localhost:3000/shift/does-not-exist/signup \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Alice"}'
+
+Shift does not exist
+
 
 ## Run tests
 
