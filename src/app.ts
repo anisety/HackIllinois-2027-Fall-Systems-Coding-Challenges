@@ -1,8 +1,8 @@
 import ex from "express";
-import rt from "./routes/sft";
+import shiftRouter from "./routes/shift";
 
-const a = ex();
-a.use(ex.json());
-a.use("/sft", rt);
+const app = ex();
+app.use(ex.json());
+app.use("/shift", shiftRouter);
 
-export default a;
+export default app;

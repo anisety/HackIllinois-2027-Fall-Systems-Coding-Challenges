@@ -1,28 +1,28 @@
 import rq from "supertest";
-import a from "../app";
-import { Sft } from "../models/sft";
-import { Sup } from "../models/sup";
+import app from "../app";
+import { Shift } from "../models/shift";
+import { Signup } from "../models/signup";
 
 describe("API", () => {
   beforeAll(async () => {
-    await Sft.deleteMany();
-    await Sup.deleteMany();
+    await Shift.deleteMany();
+    await Signup.deleteMany();
   });
 
   afterAll(async () => {
-    await Sft.deleteMany();
-    await Sup.deleteMany();
+    await Shift.deleteMany();
+    await Signup.deleteMany();
   });
 
   it("adds", async () => {
-    const response = await rq(a)
-      .post("/sft")
+    const response = await rq(app)
+      .post("/shift")
       .send({
-        nm: "A",
-        cap: 5,
+        name: "A",
+        capacity: 5,
       });
 
     expect(response.status).toBe(200);
-    expect(response.body.data.nm).toBe("A");
+    expect(response.body.data.name).toBe("A");
   });
 });
