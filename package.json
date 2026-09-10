@@ -1,0 +1,40 @@
+{
+  "name": "hackillinois-2027-fall-systems-coding-challenges",
+  "version": "1.0.0",
+  "description": "API",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anisety/HackIllinois-2027-Fall-Systems-Coding-Challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anisety/HackIllinois-2027-Fall-Systems-Coding-Challenges/issues"
+  },
+  "homepage": "https://github.com/anisety/HackIllinois-2027-Fall-Systems-Coding-Challenges#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.9.5",
+    "zod": "^4.6.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/supertest": "^7.2.1",
+    "jest": "^30.5.1",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
